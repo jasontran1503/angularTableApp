@@ -1,0 +1,18 @@
+<h1 class="text-center mb-3">A simple web app</h1>
+<div class="d-flex justify-content-center">
+    <h1 class="mr-3">Order by</h1>
+    <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+            <select class="custom-select mr-sm-2" (click)='getValueFromSelectBox(selected);'
+                (change)='getValue($event);'>
+                <option selected>Select field to sort</option>
+                <option value="id">Id</option>
+                <option value="firstName">First Name</option>
+                <option value="lastName">Last Name</option>
+                <option value="email">Email</option>
+                <option value="birthday">Birthday</option>
+                <option value="salary">Salary</option>
+            </select>
+        </div>
+    </div>
+</div>
